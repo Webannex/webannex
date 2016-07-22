@@ -1,0 +1,1234 @@
+/*
+=================================================================
+Обнуление стилей
+=================================================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a:focus{
+	outline: none;
+}
+
+
+/*
+=================================================================
+Временные потом удалить
+=================================================================
+*/
+
+
+/*
+=================================================================
+Шрифты
+=================================================================
+*/
+@font-face {
+    font-family: 'loveloblack';
+    src: url('/fonts/lovelo/lovelo_black.eot');
+    src: url('/fonts/lovelo/lovelo_black.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/lovelo/lovelo_black.woff') format('woff'),
+         url('/fonts/lovelo/lovelo_black.ttf') format('truetype'),
+         url('/fonts/lovelo/lovelo_black.svg#loveloblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('/fonts/FontAwesome/fontawesome-webfont.eot?v=3.2.1');
+  src: url('/fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=3.2.1') format('embedded-opentype'),
+       url('/fonts/FontAwesome/fontawesome-webfont.woff?v=3.2.1') format('woff'), 
+       url('/font/FontAwesome/fontawesome-webfont.ttf?v=3.2.1') format('truetype'), 
+       url('/font/FontAwesome/fontawesome-webfont.svg#fontawesomeregular?v=3.2.1') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/*
+=================================================================
+Глобальные Стили
+=================================================================
+*/
+.g-container{
+	font-family: 'Lato', sans-serif;
+	background: #f2f2f2;
+}
+
+/*
+=================================================================
+Шаблоны Классов
+=================================================================
+*/
+.l-center{
+	text-align: center;
+}
+.l-title{
+    padding: 10px 0;
+    font-size: 35px;
+    line-height: 35px;
+    position: relative;
+    font-family: 'loveloblack';
+    margin: 0 0 7px;
+}
+.l-subtitle{
+    font-size: 18px;
+    padding-bottom: 45px;
+    font-weight: normal;
+    color: #767676;
+    font-style: 'Lato', sans-serif;
+}
+.l-title_h3 {
+	font-size: 22px;
+	font-family: 'loveloblack';
+	line-height: 35px;
+}
+.l-button{
+	background: transparent;
+	border: 1px solid #fa6320;
+    color: #3d454e;
+    padding: 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-family: 'loveloblack', sans-serif;
+    font-size: 16px;
+}
+.l-button:hover,
+.l-button:active,
+.l-button:focus{
+	background: #fa6320;
+	color: #fff;
+	border: 1px solid #fa6320;
+}
+
+/*
+=================================================================
+Главное Меню
+=================================================================
+*/
+.g-header{
+	position: fixed;
+	z-index: 999999;
+	width: 100%;
+}
+.g-header .navbar-default{
+	background-color: transparent;
+	border: none;
+}
+.g-header .navbar-brand{
+	padding: 10px 15px 15px;
+}
+.g-header .navbar-brand img{
+	width: 100%;
+	max-width: 165px;
+}
+.g-header .navbar-collapse{
+	padding: 10px 0 0 0;
+}
+.g-header .navbar-collapse li a{
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.65);
+	text-transform: uppercase;
+	padding: 15px 10px;
+}
+.g-header .navbar-collapse li a:hover,
+.g-header .navbar-collapse li a:active,
+.g-header .navbar-collapse li a:focus{
+	color: #fff;
+}
+.b-menu-default {
+	width: 100%;
+}
+.fixed {
+	position:fixed;
+	top:-5px; left:0;
+	width:100%;
+	padding:10px 0;
+	-moz-box-shadow: 5px 5px 20px #333;
+	-webkit-box-shadow: 5px 5px 20px #333;
+	box-shadow: 5px 5px 20px #333;
+}
+.transbg {
+	background-color: rgba(250, 99, 32, 0.9) !important;
+}
+
+/*
+=================================================================
+Главный Слайдер
+=================================================================
+*/
+.b-shadow {
+	position: relative;
+}
+.b-shadow:before {
+	background: -moz-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.92) 100%);
+	background: -webkit-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.92) 100%);
+	background: -o-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.92) 100%);
+	background: -ms-linear-gradient(top,rgba(255,255,255,0) 0%,rgba(255,255,255,0.92) 100%);
+	background: linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0.92) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff',endColorstr='#ffffff',GradientType=0);
+	height: 200px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+z-index: 99;
+}
+.b-slider{
+	font-family: 'loveloblack';
+}
+.b-title{
+	text-align: center;
+	font-size: 40px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.b-subtitle{
+	text-align: center;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	text-transform: none;
+	line-height: 40px;
+}
+.b-slider .b-btn-join{
+	background: #fa6320;
+	padding: 10px 45px;
+	border-radius: 30px;
+	font-size: 18px;
+	color: #fff;
+	border: 0;
+}
+.b-slider .b-btn-learn{
+	font-size: 18px;
+	color: #fff;
+	padding: 8px 45px;
+	border-radius: 30px;
+	border: 2px solid #fff;
+}
+.b-slider .b-btn-join:hover{
+	background: #e76124;
+}
+.b-slider .b-btn-learn:hover{
+	background: #fff;
+	color: #3d454e;
+}
+
+/*
+=================================================================
+Блок Services
+=================================================================
+*/
+.b-services{
+	font-family: 'loveloblack';
+	margin-top: -120px;
+	z-index: 999;
+	position: relative;
+}
+.b-services .col-md-4{
+	padding: 0;
+}
+.b-services .b-big-section{
+	background: #fa6320;
+}
+.b-services .b-main-item{
+	text-align: center;
+	margin-top: 50%;
+	padding: 45px 30px;
+}
+.b-services .b-service-item-color1, .b-services .b-service-item-color2{
+	padding: 45px 30px;
+    color: #fff;
+}
+.b-services .b-service-item-color1{
+	background: #e76124;
+}
+.b-services .b-service-item-color2{
+	background: #fb7337;
+}
+.b-services i{
+	font-size: 3.5em;
+}
+.b-services h3{
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	margin: 10px 0;
+	line-height: 40px;
+}
+.b-services p{
+	font-size: 14px;
+	margin: 0 0 10px;
+	font-family: 'Lato', sans-serif;
+	line-height: 22px;
+}
+
+/*
+=================================================================
+Блок About
+=================================================================
+*/
+.b-about_bg {
+	background: #fff url(/images/about/vision-bg.png);
+	background-position: top center;
+	background-size: contain;
+}
+.b-about .row {
+	padding: 75px 20px;
+}
+.b-about .l-title_h3 {
+    padding: 0 0 15px 0;
+    margin: 0;
+}
+.b-about img {
+	max-width: 586px;
+	width: 100%;
+	margin-bottom: -77px;
+}
+.b-about article {
+	padding-top: 90px;
+}
+.b-about p {
+	font-size: 16px;
+	line-height: 25px;
+}
+.btn-primary-border {
+	background: #fff;
+	border: 1px solid #fa6320;
+	color: #3d454e;
+}
+.b-about article a {
+ 	margin-top: 35px;
+ 	padding: 8px 30px;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 30px;
+    font-family: 'loveloblack', sans-serif;
+    font-size: 16px;
+}
+.b-about article a:hover,
+.b-about article a:focus,
+.b-about article a:active{
+	background: #fa6320;
+	color: #fff;
+}
+
+/*
+=================================================================
+Блок Tabs
+=================================================================
+*/
+.b-tabs{
+}
+.b-tabs .b-bg_tabs{
+	background: #fff;
+	padding: 60px 0 45px;
+}
+.b-tabs .b-tabs-content img{
+	width: 100%;
+	max-width: 468px;
+}
+.b-tabs .b-tabs-content .txtabs-pane-in{
+	padding: 80px 0 10px;
+}
+.b-tabs .b-tabs-content p{
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 10px;
+    color: #3d454e;
+    font-family: 'Lato', sans-serif;
+}
+.txtabs-content .fade{
+    -webkit-transition: opacity .15s linear;
+    -moz-transition: opacity .15s linear;
+    -ms-transition: opacity .15s linear;
+    -o-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+    opacity: 0;
+}
+.txtabs-content .fade.in{ 
+	opacity: 1; 
+}
+
+.txtabs-content .fade-slide {
+    margin-left: 200px;
+    opacity : 0;
+    -webkit-transition: margin 0.3s ease-out, opacity 0.4s ease-in;
+    -moz-transition: margin 0.3s ease-out, opacity 0.4s ease-in;
+    -o-transition: margin 0.3s ease-out, opacity 0.4s ease-in;
+    transition: margin 0.3s ease-out, opacity 0.4s ease-in;
+}
+.txtabs-content .fade-slide.active {
+    margin-left: 0;
+    opacity : 1;
+}
+.txtabs-nav {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+.txtabs-nav li{
+	float:left;
+	padding: 0;
+	margin: 0
+}
+.txtabs-nav li a{
+	display:block;
+	padding:6px 10px;
+	tetxtabs-navdecoration:none;
+	font-weight:bold;
+	font-size: 13px;
+	cursor:pointer;
+}
+.txtabs-content{
+	padding: 10px; 
+	overflow:hidden;
+	position: relative; 
+}
+.txtabs-content > .txtabs-pane{ 
+	visibility: hidden;
+	height: 0; 
+	width: 0; 
+	position: absolute; 
+}
+.txtabs-content > .active{ 
+	visibility: visible; 
+	height: auto; 
+	width:100%; 
+	position: static;
+}
+.txtabs-nav {
+	text-align: center;
+	border-bottom: 5px solid rgba(250,99,32,0.3);
+}
+.txtabs-content {
+	background: #fff;
+}
+.txtabs-nav li {
+	float: none;
+	display: inline-block;
+}
+.txtabs-nav li a {
+	padding: 0px 25px;
+	color: #8B8B8B;
+	font-weight: normal;
+	font-size: 22px;
+	font-family: 'loveloblack', sans-serif;
+	font-weight: 300;
+	line-height: 60px;
+	border-color: transparent;
+	margin-bottom: -5px;
+	height: 62px;
+	border-bottom: 5px solid transparent;
+	text-decoration: none;
+}
+.txtabs-nav li.active a {
+  border-bottom-color: #fa6320;
+  color: #3d454e;
+}
+
+/*
+=================================================================
+Блок Utility
+=================================================================
+*/
+.b-utility_bg {
+	background: url(/images/utility-bg.jpg);
+	background-position: top center;
+	background-size: cover;
+	color: #fff;
+    padding: 60px 0;
+}
+.b-utility_bg .icon {
+    font-size: 50px;
+}
+.b-utility_bg div {
+ 	text-align: center;
+}
+.b-utility_bg h3 {
+ 	font-size: 18px;
+    padding: 12px 0 18px 0;
+    line-height: 40px;
+}
+.b-utility_bg span {
+  	font-size: 60px;
+    font-weight: 300;
+ 	font-family: 'Lato', sans-serif;
+}
+
+/*
+=================================================================
+Блок Наши Работы
+=================================================================
+*/
+.b-bg-work{
+	background: #fff;
+	padding-top: 50px;
+}
+.icon-search{
+	font-family: FontAwesome;
+	font-style: normal;
+    font-weight: normal;
+}
+.icon-search:before {
+	content: "\f002";
+}
+.tx-gallery, .tx-gallery .tx-gallery-container .tx-gallery-item {
+	margin: 0;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item .overlay-contents {
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	position: absolute;
+	margin-top: -140px;
+	width: 100%;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item .overlay-contents .tx-gallery-image-preview {
+	background-image: none;
+	background-color: transparent;
+	margin-top: -120px;
+	margin-left: -18px;
+	font-size: 48px;
+	color: #fff;
+}
+.tx-gallery .tx-gallery-image .tx-gallery-image-preview {
+	background-image: url(/images/icon-preview.png);
+	left: 50%;
+	margin-left: -40px;
+	text-decoration: none;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item .overlay-contents .tx-gallery-title {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: 'loveloblack', sans-serif;
+	font-size: 22px;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item .overlay-contents .tx-gallery-intro {
+	color: #fff;
+	margin-top: 20px;
+	padding: 0 15px;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item:hover .overlay-contents {
+	opacity: 1;
+}
+.tx-gallery .tx-gallery-container .tx-gallery-item .tx-gallery-image:hover .tx-gallery-image-overlay {
+	width: 100%;
+	height: 100%;
+	content: '';
+	display: block;
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.tx-gallery-image img{
+	width: 100%;
+	max-width: 500px;
+    vertical-align: middle;
+    border: 0;
+}
+.tx-gallery .tx-gallery-columns-4 li {
+    width: 25%;
+}
+.tx-gallery ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.tx-gallery li {
+	display: inline-block;
+	vertical-align: top;
+}
+.tx-gallery .tx-gallery-header {
+	margin: 0 0 10px;
+	*zoom: 1;
+}
+.tx-gallery .tx-gallery-header li {
+	display: inline-block;
+	padding: 1px 6px;
+	margin: 0;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.tx-gallery .tx-gallery-header li:hover {
+  background: #fff;
+}
+
+.tx-gallery .tx-gallery-header li.active {
+	background: transparent;
+	border: 1px solid #fa6320;
+}
+.tx-gallery .tx-gallery-filters {
+	float: none;
+}
+.tx-gallery .tx-gallery-filters li {
+	padding: 8px 15px;
+	margin: 5px;
+	border-radius: 20px;
+	background: none;
+	border: 1px solid transparent;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+}
+.tx-gallery .tx-gallery-image:hover .tx-gallery-image-preview {
+	opacity: 1;
+	margin-left: -35px;
+}
+.tx-gallery .tx-gallery-image .tx-gallery-image-preview,
+.tx-gallery .tx-gallery-image .tx-gallery-image-link {
+	position: absolute;
+	top: 50%;
+	margin-top: -15px;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+/*
+=================================================================
+Блок Order
+=================================================================
+*/
+.b-order{
+	margin: -1px 0 0;
+}
+.b-order_bg {
+    background: #fa6320;
+    color: #fff;
+    padding-top: 75px;
+    padding-bottom: 15px;
+}
+.b-order h4 {
+ 	font-size: 18px;
+    font-weight: normal;
+}
+.b-order h2,.b-order h4 {
+	line-height: 10px;
+}
+.b-order a {
+	background: rgba(0,0,0,0);
+	border: 1px solid #FFF;
+	padding: 10px 45px;
+	font-size: 18px;
+	display: inline-block;
+	text-transform: uppercase;
+	border-radius: 30px;
+	color: #fff;
+	font-family: 'loveloblack', sans-serif;
+}
+.b-order a:hover,
+.b-order a:focus,
+.b-order a:active {
+	background:#f1f1f1;
+	color: #000;
+}
+
+/*
+=================================================================
+Блок Отзывы
+=================================================================
+*/
+.b-bg-reviews{
+	background: url('/images/reviews/testimonial-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+	padding: 70px 0;
+}
+.b-reviews article header p{
+	font-family: "Lato", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+    padding: 0 220px;
+    display: block;
+}
+.b-reviews .b-reviews-info{
+    margin: 60px auto 30px;
+    width: 23%;
+}
+.b-reviews .b-reviews-info img{
+	display: inline-block;
+	border-radius: 100%;
+    margin: 0 1em 0 0;
+    float: left;
+    max-width: 50px;
+    width: 100%;
+}
+.b-reviews .b-reviews-info p{
+	float: left;
+    font-family: 'loveloblack', sans-serif;
+    font-size: 18px;
+    margin-top: 0.5em;
+}
+.b-reviews .b-reviews-info span{
+	float: left;
+    font-size: 14px;
+}
+.b-reviews .slick-prev, .b-reviews .slick-next{
+	height: 29px;
+	z-index: 999999;
+}
+.b-reviews .slick-next{
+	right: 30px;
+}
+.b-reviews .slick-prev{
+	left: 30px;
+}
+
+/*
+=================================================================
+Блок Клиенты
+=================================================================
+*/
+.b-clients_bg {
+	background: #fff;
+	padding: 70px 0 50px;
+}
+.b-clients_bg img:hover {
+    opacity: 0.5;
+}
+
+/*
+=================================================================
+Блок Team
+=================================================================
+*/
+.b-team .col-md-6,
+.b-team .col-md-4{
+	padding-right: 0;
+    padding-left: 0;
+}
+.b-team_bg {
+	background: #fbfbfb;
+	padding: 60px 25px;
+}
+.b-team_bg img {
+	max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+.b-team .arrow-left,
+.b-team .arrow-left {
+	position: relative;
+}
+.b-team .arrow-left:before,
+.b-team .arrow-left:before {
+	content: "";
+	position: absolute;
+	top: 45px;
+	width: 0;
+	height: 0;
+	left: -8px;
+	bottom: 0;
+	-ms-transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	border-width: 0 15px 15px 0px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) #fff rgba(0,0,0,0);
+}
+.b-team .arrow-right,
+.b-team .arrow-right {
+	position: relative;
+}
+.b-team .arrow-right:before,
+.b-team .arrow-right:before {
+	content: "";
+	position: absolute;
+	top: 45px;
+	width: 0;
+	height: 0;
+	right: -8px;
+	bottom: 0;
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-width: 0 15px 15px 0px;
+	border-style: solid;
+	border-color: rgba(0,0,0,0) rgba(0,0,0,0) #fff rgba(0,0,0,0);
+}
+.b-desc_team {
+	background: #fff;
+}
+.b-desc_team div {
+	padding: 30px 15px;
+}
+.b-desc_team p {
+	margin: 0 0 25px;
+}
+.b-team_role {
+	color: #fa6320;
+    font-style: italic;
+    text-transform: uppercase;
+}
+.b-team_name{
+    font-family: 'loveloblack', sans-serif;
+}
+.b-social_icons{
+	margin-top: 45px;
+}
+.b-social_icons li {
+	float: left;
+}
+.b-social_icons li a {
+	color: #fa6320;
+	margin-left: 10px;
+}
+.b-social_icons li a:hover,
+.b-social_icons li a:focus,
+.b-social_icons li a:active{
+	color: #37bef1;
+	text-decoration: none;
+}
+.b-social_icons li a i {
+    font-size: 24px;
+}
+
+/*
+=================================================================
+Блок Блог
+=================================================================
+*/
+.b-bg-blog{
+	background: #fff;
+	padding: 70px 0 0 0;
+	position: relative;
+}
+.b-blog .col-md-6{
+	padding: 0;
+}
+.b-blog img{
+	width: 100%;
+	max-width: 600px;
+}
+.b-blog .b-blog-header{
+	position: absolute;
+    top: 30px;
+    right: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.b-blog .b-blog-header a{
+	color: #fff;
+    margin-left: 10px;
+}
+.b-blog .b-blog-header a:hover{
+	text-decoration: none;
+	color: #bdc3c7;
+}
+.b-blog .b-blog-content{
+    position: absolute;
+    bottom: 0;
+    padding: 45px;
+}
+.b-blog .b-blog-content header a{
+	font-size: 22px;
+    font-family: 'loveloblack', sans-serif;
+    color: #fff;
+    line-height: 45px;
+}
+.b-blog .b-blog-content p{
+	line-height: 25px;
+    color: #fff;
+    padding: 4px 0;
+}
+.b-blog .b-blog-content .l-button{
+	text-decoration: none;
+	color: #fff;
+	margin: 30px 0 0;
+}
+.b-blog .b-blog-content .l-button:hover, .b-blog .b-blog-content header a:hover{
+	text-decoration: none;
+}
+
+/*
+=================================================================
+Блок Контакты
+=================================================================
+*/
+.b-bg-contact{
+	background: url('/images/contact/footer-bg.jpg');
+	background-size: cover;
+    padding: 60px 0;
+}
+.b-contact .b-contact-social, .b-contact .b-contact-address{
+	padding: 15px;
+    margin: 10px;
+    position: relative;
+}
+.b-contact .b-contact-social h3, .b-contact .b-contact-address h3{
+    margin: -15px -15px 15px -15px;
+    padding: 15px;
+}
+.b-contact .b-contact-social ul li{
+	float: left;
+}
+.b-contact .b-contact-social ul li a{
+	margin-right: 15px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    color: #fa6320;
+}
+.b-contact .b-contact-social ul li a:hover{
+	text-decoration: none;
+}
+.b-contact .b-contact-social ul li a i{
+	font-size: 34px;
+    border-radius: 100%;
+}
+.b-contact .b-contact-social ul li a i:hover {
+	background: #fa6320;
+	color: #fff;
+}
+.b-contact .b-contact-address p{
+	margin: 0 0 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+.b-contact .b-contact-address p i{
+    color: #fa6320;
+    padding-right: 15px;
+    font-size: 30px;
+}
+.b-contact .b-contact-form{
+	padding: 15px;
+    margin: 10px;
+    position: relative;
+}
+.b-contact .b-contact-form form{
+	margin: 0 0 20px;
+}
+.b-contact .b-contact-form input, .b-contact .b-contact-form textarea{
+	border: 1px solid #fa6320;
+	border-radius: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color: #555;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+}
+.b-contact .b-contact-form .l-button{
+	background: #fa6320;
+	color: #fff;
+}
+.b-contact .b-contact-form .l-button:hover{
+	background: #e76124;
+}
+
+/*
+=================================================================
+Подвал
+=================================================================
+*/
+.b-footer .b-footer-border{
+	border-bottom: 1px solid #fa6320;
+	position: relative;
+}
+.b-footer .b-inner-fotter-border {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    border-color: #fa6320;
+
+    display: block;
+    position: absolute;
+    width: 30px;
+    font-size: 0;
+    left: 50%;
+    height: 30px;
+    z-index: 9999;
+    background: #fff;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(-45deg);
+    margin-left: -15px;
+    top: -15px;
+}
+.b-footer .b-footer-bottom{
+	padding: 30px 0;
+	background: #fff;
+}
+.b-footer .b-footer-bottom p{
+	padding: 10px 15px;
+	color: #3d454e;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.b-footer .b-footer-bottom .b-footer-logo{
+	background: rgba(0, 0, 0, 0) url("/images/themexpert.png") no-repeat scroll 0 0;
+    display: inline-block;
+    font-size: 0;
+    height: 18px;
+    text-indent: -9999px;
+    width: 75px;
+    vertical-align: middle;
+}
+.b-footer .b-footer-bottom .b-vremenno{
+	background: rgba(0, 0, 0, 0) url("/images/expose_logo_light.png") no-repeat scroll 0 0;
+	margin: 0 auto;
+	display: block;
+    height: 40px;
+    width: 152px;
+}
+.b-footer .b-footer-bottom .b-footer-menu{
+	margin: 0;
+    padding: 10px 15px;
+}
+.b-footer .b-footer-bottom .b-footer-menu li{
+	display: inline-block;
+    font-weight: 400;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.b-footer .b-footer-bottom .b-footer-menu li a {
+    color: #3d454e;
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+.b-footer .b-footer-bottom .b-footer-menu li a:hover{
+	text-decoration: none;
+}
+
+/*
+=================================================================
+Media(адаптив)
+=================================================================
+*/
+@media (max-width: 995px){
+	/*
+	 * Меню
+	 */
+	.g-header .b-menu-default .container{
+		width: 100%;
+	}
+ 	.g-header .navbar-collapse li a {
+	    padding: 15px 5px;
+	}
+	.g-header .navbar-right{
+	    width: 80%;
+	}
+}
+@media (max-width: 885px){
+	/*
+	 * Меню
+	 */
+	.g-header .navbar-brand img{
+	    max-width: 120px;
+	    margin: 5px 0 0;
+	}
+	.g-header .navbar-right{
+	    width: 84%;
+	}
+}
+@media (max-width: 850px){
+	/*
+	 * Меню
+	 */
+	.g-header .navbar-collapse li a {
+	    padding: 15px 3px;
+	}
+}
+@media (max-width: 805px){
+	/*
+	 * Меню
+	 */
+	.g-header .navbar-collapse li a {
+	    font-size: 14px;
+	}
+	.g-header .navbar-right{
+	    width: 83%;
+	}
+}
+@media (max-width: 767px){
+	.b-container-index{
+		padding: 0;
+	}
+	/*
+	 * Меню
+	 */
+	.g-header{
+		background: #fa6320;
+	}
+	.g-header .navbar-brand img {
+	    max-width: 160px;
+        margin: 5px 0 0 45%;
+	}
+	.g-header .navbar-toggle {
+	    padding: 14px 15px;
+	    margin-top: 15px;
+    	margin-right: 20%;
+	}
+	.g-header .navbar-nav{
+		margin: 0;
+	}
+	.g-header .navbar-right{
+	    width: 100%;
+    	padding: 0 0 0 4%;
+	}
+	.g-header .navbar-collapse li a{
+		font-size: 16px;
+		padding: 12px 3px;
+	}
+	.g-header .navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+	}
+	.g-header .navbar-toggle:hover, 
+	.g-header .navbar-toggle:active,
+	.g-header .navbar-toggle:focus{
+		background: transparent;
+	}
+	/*
+	 * Главный Слайдер
+	 */
+	.b-shadow, .b-slider, #rev_slider_1_1, .tp-bannertimer{
+		display: none !important;
+		height: 0 !important;
+		width: 0 !important;
+	}
+
+	/*
+	 * Блок Services
+	 */
+	.b-services{
+		margin-top: 86px;
+	}
+	.b-services .b-big-section{
+		height: 0;
+	}
+	.b-services .b-main-item {
+	    margin-top: 0;
+	}
+	.b-services .col-md-4 div:first-child{
+		background: #e76124;
+	}
+	.b-services .col-md-4 div:last-child{
+		background: #fb7337;
+	}
+	.b-services .b-service-item-color1, .b-services .b-service-item-color2 {
+	    color: #fff;
+	    padding: 18px 30px;
+	}
+
+	/*
+	 * Блок About
+	 */
+	.b-about_bg {
+	    text-align: center;
+	}
+	.b-about img{
+		max-width: 540px;
+	}
+	
+	/*
+	 * Блок Tabs
+	 */
+	.b-tabs .b-bg_tabs {
+	    padding: 0;
+	}
+	.b-tabs .b-tabs-content .txtabs-pane-in {
+	    padding: 20px 0 10px;
+	    text-align: center;
+	}
+	.b-tabs-content .l-title_h3{
+		padding: 10px 0 0;
+	}
+	
+	/*
+	 * Блок Utility
+	 */
+	.b-utility_bg{
+		padding: 0;
+	}
+	.b-utility .col-md-3{
+		margin: 20px 0;
+	}
+	.b-utility_bg h3 {
+	    padding: 0;
+	}
+
+
+
+
+
+	.tx-gallery .tx-gallery-columns-4 li {
+	    width: 33%;
+	}
+
+
+
+	.b-bg-reviews {
+	    padding: 20px 0;
+	}
+	.b-reviews article header p {
+	    padding: 0 40px;
+	}
+	.b-reviews .b-reviews-info {
+	    width: 35%;
+	}
+}
