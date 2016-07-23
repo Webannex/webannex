@@ -48,7 +48,7 @@
 
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption medium_light_white sfl tp-resizeme  title"
-						data-x="135"
+						data-x="160"
 						data-y="78" 
 						data-speed="300"
 						data-start="550"
@@ -64,7 +64,7 @@
 
 					<!-- LAYER NR. 2 -->
 					<div class="tp-caption medium_light_white sfr tp-resizeme"
-						data-x="35"
+						data-x="0"
 						data-y="center" data-voffset="7"
 						data-speed="300"
 						data-start="850"
@@ -84,7 +84,7 @@
 
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="237"
+						data-x="290"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1150"
@@ -101,7 +101,7 @@
 
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="456"
+						data-x="520"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1450"
@@ -124,7 +124,7 @@
 
 					<!-- LAYER NR. 1 -->
 					<div class="tp-caption medium_light_white sfl tp-resizeme  title"
-						data-x="109"
+						data-x="120"
 						data-y="78" 
 						data-speed="300"
 						data-start="550"
@@ -140,7 +140,7 @@
 
 					<!-- LAYER NR. 2 -->
 					<div class="tp-caption medium_light_white sfr tp-resizeme"
-						data-x="35"
+						data-x="0"
 						data-y="center" data-voffset="7"
 						data-speed="300"
 						data-start="850"
@@ -160,7 +160,7 @@
 
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="237"
+						data-x="280"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1150"
@@ -177,7 +177,7 @@
 
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="456"
+						data-x="520"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1450"
@@ -216,7 +216,7 @@
 
 					<!-- LAYER NR. 2 -->
 					<div class="tp-caption medium_light_white sfr tp-resizeme"
-						data-x="35"
+						data-x="10"
 						data-y="center" data-voffset="7"
 						data-speed="300"
 						data-start="850"
@@ -236,7 +236,7 @@
 
 					<!-- LAYER NR. 3 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="237"
+						data-x="300"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1150"
@@ -253,7 +253,7 @@
 
 					<!-- LAYER NR. 4 -->
 					<div class="tp-caption small_light_white sfb tp-resizeme b-btn-div-top"
-						data-x="456"
+						data-x="520"
 						data-y="center" data-voffset="78"
 						data-speed="300"
 						data-start="1450"
