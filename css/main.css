@@ -118,13 +118,13 @@ a:focus{
     font-style: 'Lato', sans-serif;
 }
 .l-title_h3 {
-	font-size: 22px;
-	font-family: 'loveloblack';
-	line-height: 35px;
+    font-size: 22px;
+    font-family: 'loveloblack';
+    line-height: 35px;
 }
 .l-button{
-	background: transparent;
-	border: 1px solid #fa6320;
+    background: transparent;
+    border: 1px solid #3498db;
     color: #3d454e;
     padding: 8px 30px;
     display: inline-block;
@@ -136,9 +136,9 @@ a:focus{
 .l-button:hover,
 .l-button:active,
 .l-button:focus{
-	background: #fa6320;
+	background: #3498db;
 	color: #fff;
-	border: 1px solid #fa6320;
+	border: 1px solid #3498db;
 }
 
 /*
@@ -189,7 +189,7 @@ a:focus{
 	box-shadow: 5px 5px 20px #333;
 }
 .transbg {
-	background-color: rgba(250, 99, 32, 0.9) !important;
+	background-color: #3498db !important;
 }
 
 /*
@@ -233,7 +233,7 @@ z-index: 99;
 	line-height: 40px;
 }
 .b-slider .b-btn-join{
-	background: #fa6320;
+	background: #3498db;
 	padding: 10px 45px;
 	border-radius: 30px;
 	font-size: 18px;
@@ -248,7 +248,7 @@ z-index: 99;
 	border: 2px solid #fff;
 }
 .b-slider .b-btn-join:hover{
-	background: #e76124;
+	background: #2E88C5;
 }
 .b-slider .b-btn-learn:hover{
 	background: #fff;
@@ -270,7 +270,7 @@ z-index: 99;
 	padding: 0;
 }
 .b-services .b-big-section{
-	background: #fa6320;
+	background: #3498db;
 }
 .b-services .b-main-item{
 	text-align: center;
@@ -282,10 +282,10 @@ z-index: 99;
     color: #fff;
 }
 .b-services .b-service-item-color1{
-	background: #e76124;
+	background: #2E88C5;
 }
 .b-services .b-service-item-color2{
-	background: #fb7337;
+	background: #57aae1;
 }
 .b-services i{
 	font-size: 3.5em;
@@ -350,7 +350,7 @@ z-index: 99;
 .b-about article a:hover,
 .b-about article a:focus,
 .b-about article a:active{
-	background: #fa6320;
+	background: #3498db;
 	color: #fff;
 }
 
@@ -440,7 +440,7 @@ z-index: 99;
 }
 .txtabs-nav {
 	text-align: center;
-	border-bottom: 5px solid rgba(250,99,32,0.3);
+	border-bottom: 5px solid rgba(52, 152, 219, 0.3);
 }
 .txtabs-content {
 	background: #fff;
@@ -464,7 +464,7 @@ z-index: 99;
 	text-decoration: none;
 }
 .txtabs-nav li.active a {
-  border-bottom-color: #fa6320;
+  border-bottom-color: #3498db;
   color: #3d454e;
 }
 
@@ -504,7 +504,7 @@ z-index: 99;
 */
 .b-bg-work{
 	background: #fff;
-	padding-top: 50px;
+	/*padding-top: 50px;*/
 }
 .icon-search{
 	font-family: FontAwesome;
@@ -604,7 +604,7 @@ z-index: 99;
 
 .tx-gallery .tx-gallery-header li.active {
 	background: transparent;
-	border: 1px solid #fa6320;
+	border: 1px solid #3498db;
 }
 .tx-gallery .tx-gallery-filters {
 	float: none;
@@ -649,7 +649,7 @@ z-index: 99;
 	margin: -1px 0 0;
 }
 .b-order_bg {
-    background: #fa6320;
+    background: #3498db;
     color: #fff;
     padding-top: 75px;
     padding-bottom: 15px;
@@ -924,11 +924,11 @@ z-index: 99;
 	float: left;
 }
 .b-contact .b-contact-social ul li a{
-	margin-right: 15px;
+    margin-right: 15px;
     display: block;
     width: 32px;
     height: 32px;
-    color: #fa6320;
+    color: #3498db;
 }
 .b-contact .b-contact-social ul li a:hover{
 	text-decoration: none;
@@ -938,7 +938,7 @@ z-index: 99;
     border-radius: 100%;
 }
 .b-contact .b-contact-social ul li a i:hover {
-	background: #fa6320;
+	background: #3498db;
 	color: #fff;
 }
 .b-contact .b-contact-address p{
@@ -947,21 +947,21 @@ z-index: 99;
     font-size: 14px;
 }
 .b-contact .b-contact-address p i{
-    color: #fa6320;
+    color: #3498db;
     padding-right: 15px;
     font-size: 30px;
 }
 .b-contact .b-contact-form{
-	padding: 15px;
+    padding: 15px;
     margin: 10px;
     position: relative;
 }
 .b-contact .b-contact-form form{
-	margin: 0 0 20px;
+    margin: 0 0 20px;
 }
 .b-contact .b-contact-form input, .b-contact .b-contact-form textarea{
-	border: 1px solid #fa6320;
-	border-radius: 0;
+    border: 1px solid #3498db;
+    border-radius: 0;
     margin-bottom: 15px;
     padding: 15px;
     background-color: #fff;
@@ -972,11 +972,11 @@ z-index: 99;
     width: 100%;
 }
 .b-contact .b-contact-form .l-button{
-	background: #fa6320;
-	color: #fff;
+    background: #3498db;
+    color: #fff;
 }
 .b-contact .b-contact-form .l-button:hover{
-	background: #e76124;
+    background: #2e88c5;
 }
 
 /*
@@ -985,13 +985,13 @@ z-index: 99;
 =================================================================
 */
 .b-footer .b-footer-border{
-	border-bottom: 1px solid #fa6320;
+	border-bottom: 1px solid #3498db;
 	position: relative;
 }
 .b-footer .b-inner-fotter-border {
     border-style: solid;
     border-width: 1px 1px 0 0;
-    border-color: #fa6320;
+    border-color: #3498db;
 
     display: block;
     position: absolute;
