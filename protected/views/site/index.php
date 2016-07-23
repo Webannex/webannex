@@ -278,10 +278,10 @@
 
 <div class="clearfix"></div>
 
-<div class="container b-container-index">
+<div class="container b-container-index  g-main-content">
 	<!-- START BLOCK SERVICES -->
 	<section class="b-services">
-		<section class="container">
+		<section class="container content-width">
 			<div class="row">
 				<div class="col-md-4 b-big-section j-service-height">
 					<div class="b-main-item">
@@ -336,7 +336,7 @@
 
 	<!-- START BLOCK ABOUT -->
 	<section class="b-about">
-		<section class="container">
+		<section class="container content-width">
 			<div class="row b-about_bg">
 				<div class="col-md-7">
 					<img src="/images/about/vision.png" alt="">
@@ -360,7 +360,7 @@
 
 	<!-- START BLOCK TABS -->
 	<section class="b-tabs">
-		<section class="container">
+		<section class="container content-width">
 			<div class="row b-bg_tabs">
 				<header class="l-center">
 					<hgroup>
@@ -472,7 +472,7 @@
 
 	<!-- START BLOCK WORK -->
 	<section class="b-work">
-		<section class="container">
+		<section class="container content-width">
 			<div class="b-bg-work row">
 				<header class="l-center">
 					<h2 class="l-title">Our Works</h2>
@@ -663,7 +663,7 @@
 
 	<!-- START BLOCK ORDER -->
 	<section class="b-order">
-		<section class="container">
+		<section class="container content-width">
 			<div class="row b-order_bg">
 				<div class="col-md-9">
 					<h2 class="l-title">what are you waiting for ?</h2>
@@ -682,7 +682,7 @@
 
 	<!-- START BLOCK BLOG -->
 	<section class="b-blog">
-		<section class="container">
+		<section class="container content-width">
 			<div class="b-bg-blog row">
 				<header class="l-center">
 					<h2 class="l-title">Our cozy blog</h2>
@@ -758,7 +758,7 @@
 
 	<!-- START BLOCK CONTACT -->
 	<section class="b-contact">
-		<section class="container">
+		<section class="container content-width">
 			<div class="row b-bg-contact">
 				<div class="col-md-6">
 					<div class="b-contact-social">
