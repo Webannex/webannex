@@ -62,9 +62,9 @@
 
 			<div class = "clearfix"></div>
 
-			<section class="container">
+			<section class="container footer-correct">
 				<footer class="b-footer">
-					<section class="container">
+					<section class="container footer-correct">
 						<div class="row">
 							<div class="b-footer-border">
 								<div class="b-inner-fotter-border"></div>
@@ -74,15 +74,15 @@
 							
 							<div class="b-footer-bottom">
 								<div class="col-md-5">
-									<p>Copyright © 2010-2012 ThemeXpert, All rights reserved.</p>
+									<p>ИП Старыгин С.Ю.</p>
 									<p>
-										Designed by: 
-										<a class="b-footer-logo" href="/" title="WebAnnex" target="_blank"></a>
+										Изготовлено:
+										<a class="b-footer-logo" href="#" title="WebAnnex" target="_blank">WebAnnex Group</a>
 									</p>
 								</div>
 
 								<div class="col-md-2">
-									<a class="b-vremenno" title="asd" target="_blank" href="/"></a>
+									<a class="b-vremenno" title="asd" target="_blank" href="/">WebAnnex Group</a>
 								</div>
 
 								<div class="col-md-5 b-footer-menu">

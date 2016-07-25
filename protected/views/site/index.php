@@ -765,8 +765,8 @@
 						<h3 class="l-title_h3">Social Media</h3>
 
 						<ul>
-							<li><a href="#"><i class="bc-twitter"></i></a></li>
-							<li><a href="#"><i class="bc-facebook"></i></a></li>
+							<li><a href="https://twitter.com/Web_Annex"><i class="bc-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/Web-Annex-309982299345646"><i class="bc-facebook"></i></a></li>
 							<li><a href="#"><i class="bc-googleplus"></i></a></li>
 							<li><a href="#"><i class="bc-linkedin"></i></a></li>
 							<li><a href="#"><i class="bc-rss"></i></a></li>
@@ -778,19 +778,19 @@
 					<div class="clearfix"></div>
 
 					<div class="b-contact-address">
-						<h3 class="l-title_h3">Address</h3>
+						<h3 class="l-title_h3">Адресс</h3>
 
 						<p>
 							<i class="bc-map-pin"></i>
-							35/4, Lake Circus, Kolabagan 1205 Dhaka, Bangladesh
+							234, 16, ул. Каменногорская, г. Минск
 						</p>
 						<p>
 							<i class="bc-phone"></i>
-							 +1 407-898-2960
+							 +375 25 679 18 65
 						</p>
 						<p>
 							<i class="bc-envelope"></i>
-							no-reply@themexpert.com
+							webannexteam@gmail.com
 						</p>
 					</div>
 				</div>

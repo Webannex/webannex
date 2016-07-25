@@ -93,7 +93,7 @@ a:focus{
 	font-family: 'Lato', sans-serif;
 	background: #f2f2f2;
 }
-.content-width, .g-main-content{
+.content-width, .g-main-content, .footer-correct{
     padding-right: 0;
     padding-left: 0;
 }
@@ -974,6 +974,7 @@ z-index: 99;
     font-size: 14px;
     line-height: 20px;
     width: 100%;
+	resize: none;
 }
 .b-contact .b-contact-form .l-button{
     background: #3498db;
@@ -1024,20 +1025,21 @@ z-index: 99;
     line-height: 22px;
 }
 .b-footer .b-footer-bottom .b-footer-logo{
-	background: rgba(0, 0, 0, 0) url("/images/themexpert.png") no-repeat scroll 0 0;
+	/*background: rgba(0, 0, 0, 0) url("/images/themexpert.png") no-repeat scroll 0 0;*/
     display: inline-block;
-    font-size: 0;
+    font-size: 24px;
     height: 18px;
-    text-indent: -9999px;
+    text-indent: 15px;
     width: 75px;
     vertical-align: middle;
 }
 .b-footer .b-footer-bottom .b-vremenno{
-	background: rgba(0, 0, 0, 0) url("/images/expose_logo_light.png") no-repeat scroll 0 0;
+	/*background: rgba(0, 0, 0, 0) url("/images/expose_logo_light.png") no-repeat scroll 0 0;*/
 	margin: 0 auto;
 	display: block;
     height: 40px;
-    width: 152px;
+    width: 180px;
+	padding: 0 26px;
 }
 .b-footer .b-footer-bottom .b-footer-menu{
 	margin: 0;
